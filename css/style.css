@@ -1375,24 +1375,31 @@ footer {
   /*********************************************************************/
   
   .secondScreen, .secScrCont {
-    height: 934px;
     background: #fff;
+  }
+  .secondScreen {
+    height: 1200px;
+  }
+  .secondScreen > div, .secScrCont > div {
+    height: initial;
   }
   .cont {
     flex-direction: column;
-  }
-  .cont > div {
-    position: initial;
+    align-items: flex-start;
   }
   .chooseMat {
     padding-bottom: 50px;
-    width: 400px;
+    width: initial;
   }
   .chooseMat > .chsMatTitle {
-    width: 400px;
+    width: initial;
   }
   .chsMatButtons {
     margin: 0;
+    padding-left: 20px;
+  }
+  .chsMatTitle {
+    margin-left: 20px;
   }
   .chsMatTitle > h2 {
     font-size: 24px;
@@ -1401,7 +1408,8 @@ footer {
   .chsMatTitle > hr {
     width: 45px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   .chsMatTitle > p {
     font-size: 16px;
@@ -1413,6 +1421,7 @@ footer {
     padding: 5px 10px;
     line-height: 11px;
     height: 25px;
+    width: 210px;
   }
   .MatButton:hover {
     background-size: 170px 25px;
@@ -1421,20 +1430,29 @@ footer {
     margin: 0;
     background-color: #000;
     padding-bottom: 50px;
+    width: 100%;
+    align-items: center;
   }
   .matPic {
     display: flex;
+    margin-right: 0 !important;
+    margin-left: 0;
+    justify-content: space-between;
   }
   .matPic > img {
     width: 150px;
     margin-top: 25px;
   }
   .fstMat {
-    margin-left: 30px;
-    margin-right: -30px;
+    margin: 0;
+    margin-right: -20px;
+  }
+  .secMat {
+    margin: 0;
   }
   .matText {
-    margin-left: 30px;
+    margin-left: 0px !important;
+    width: 75%;
   }
   .matTitle {
     margin-top: 25px;
@@ -1446,7 +1464,7 @@ footer {
     line-height: 18px;
   }
   .matTypes {
-    margin-left: 30px;
+    margin-left: 0px;
     margin-top: 30px;
   }
   .matType, .matType:not(:last-of-type) {
@@ -1465,23 +1483,48 @@ footer {
     margin-bottom: 20px;
   }
   .matCard > .addBtn {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
+  /*********************************************************************/
+
+  .trdScrCont {
+    height: auto;
+    background-color: #fff;
+    background-image: none;
+  }
+  .thirdScreen {
+    margin: 0;
+  }
   .trdScrCont > .cont {
     flex-direction: column-reverse;
   }
+  .aiRight {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    align-content: flex-start;
+  }
+  .cont >.aiRight {
+    width: 100%;
+    background-color: #fff;
+  }
   .thirdScreen > .trdScrCont > .cont > .matCard, .matCard > .aiRight {
     margin: 0;
-    width: 400px;
   }
 
-  /*********************************************************************.
-  /* В ПИЗДУ, Я ЭТО ПРОПУЩУ */
+  /*********************************************************************/
+
+  .orderCard {
+    margin: 0;
+  }
+
+  /*********************************************************************/
 
   .fourthScreen {
     padding: 40px 30px;
     background-image: url('../img/videoBGMobile.png');
+    background-position-x: center;
     height: initial;
   }
   .fourthScreen > div:first-of-type {
@@ -1731,6 +1774,7 @@ footer {
   }
   .inputName {
     width: 191px;
+    background-position: top 16px left 16px
   }
   .inputPhone {
     background-position: top 16px left 16px;
@@ -1745,6 +1789,10 @@ footer {
   }
   .formButton {
     margin: 0;
+  }
+  .formButton:checked {
+    height: 43px;
+    width: 176px;
   }
   .tnthtext > br {
     display: none;
