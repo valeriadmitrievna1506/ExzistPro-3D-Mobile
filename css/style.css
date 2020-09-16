@@ -1276,9 +1276,9 @@ footer {
   display: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .container {
-    max-width: 320px;
+    max-width: 400px;
   }
   .header, .headerCont {
     height: 81px;
@@ -1373,10 +1373,10 @@ footer {
   }
   .chooseMat {
     padding-bottom: 50px;
-    width: 320px;
+    width: 400px;
   }
   .chooseMat > .chsMatTitle {
-    width: 320px;
+    width: 400px;
   }
   .chsMatButtons {
     margin: 0;
@@ -1460,7 +1460,7 @@ footer {
   }
   .thirdScreen > .trdScrCont > .cont > .matCard, .matCard > .aiRight {
     margin: 0;
-    width: 320px;
+    width: 400px;
   }
 
 
@@ -1483,6 +1483,12 @@ footer {
     margin: 70px 0;
     width: 280px;
     height: 155px;
+  }
+  .answersCont {
+    flex-direction: column;
+  }
+  .answer {
+
   }
 
 }
