@@ -1277,6 +1277,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+  * {
+    background-size: cover;
+  }
   .container {
     max-width: 400px;
   }
