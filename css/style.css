@@ -1360,7 +1360,7 @@ footer {
     font-size: 13px;
     line-height: 18px;
   }
-
+  
   .secondScreen, .secScrCont {
     height: 934px;
     background: #fff;
@@ -1373,6 +1373,10 @@ footer {
   }
   .chooseMat {
     padding-bottom: 50px;
+    width: 320px;
+  }
+  .chooseMat > .chsMatTitle {
+    width: 320px;
   }
   .chsMatButtons {
     margin: 0;
@@ -1403,6 +1407,7 @@ footer {
   .matCard {
     margin: 0;
     background-color: #000;
+    padding-bottom: 50px;
   }
   .matPic {
     display: flex;
@@ -1415,4 +1420,69 @@ footer {
     margin-left: 20px;
     margin-right: -20px;
   }
+  .matText {
+    margin-left: 20px;
+  }
+  .matTitle {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .matDesc > ol > li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .matTypes {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .matType, .matType:not(:last-of-type) {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+  .matColor {
+    margin-left: 25px;
+    font-size: 13px;
+    margin: 0;
+  }
+  .matPrice {
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .matCard > .addBtn {
+    margin-left: 20px;
+  }
+
+  .trdScrCont > .cont {
+    flex-direction: column-reverse;
+  }
+  .thirdScreen > .trdScrCont > .cont > .matCard, .matCard > .aiRight {
+    margin: 0;
+    width: 320px;
+  }
+
+
+
+  /* В ПИЗДУ, Я ЭТО ПРОПУЩУ */
+
+  .fourthScreen {
+    padding: 40px 20px;
+    background-image: url('../img/videoBGMobile.png');
+  }
+  .fourthScreen > div:first-of-type {
+    background-image: none;
+  }
+  .frthScrCont > p {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0;
+  }
+  .videoCont {
+    margin: 70px 0;
+    width: 280px;
+    height: 155px;
+  }
+
 }
