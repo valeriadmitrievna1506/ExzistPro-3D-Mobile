@@ -1,0 +1,1388 @@
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body,
+html {
+  margin: auto;
+  background: white;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.headerCall-Button:hover,
+.button:hover,
+.navButton:hover {
+  cursor: pointer;
+}
+
+.button,
+.button:focus,
+.button:active {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  box-shadow: 0px 12px 28.48px 3.52px rgba(240, 74, 81, 0.29);
+  width: 343px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fstScrCont,
+.sthScrCont,
+.fstScrTitle,
+.chsMatTitle,
+.matCard,
+.chooseMat,
+.orderText,
+.orderForm,
+.matApper,
+.clientContacts,
+.carDesc,
+.subFfScr,
+.markers,
+.facts,
+.columnFlexCont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.number,
+.headerCall-Button,
+.firstScreen,
+.secondScreen,
+.secScrCont,
+.MatButton:hover,
+.thirdScreen,
+.trdScrCont,
+.orderCard,
+input,
+select,
+.fifthScreen,
+.fourthScreen,
+.fourthScreen > div:first-of-type,
+.sixthScreen {
+  background-repeat: no-repeat;
+}
+
+.headerCont,
+.headerDesc,
+.headerCall,
+.navCont,
+.fstScrDesc,
+.answersCont,
+.cont,
+.minPrice,
+.matApper > div,
+.carDesc > div,
+.contacts,
+.matApperForTrunk,
+.materialList {
+  font-family: "ProximaNova";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button,
+.button:focus,
+.button:active {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  box-shadow: 0px 12px 28.48px 3.52px rgba(240, 74, 81, 0.29);
+  width: 343px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+/*********************************************************************/
+/*****HEADER*****/
+
+.header {
+  width: 100%;
+  height: 112px;
+  background-color: rgb(4, 4, 5);
+  color: white;
+}
+
+.headerCont {
+  height: 112px;
+  margin-bottom: 37px;
+}
+
+.shortDesc {
+  margin-left: 18px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: left;
+}
+
+.headerCall-Button {
+  height: 91px;
+  width: 302px;
+  padding-bottom: 9px;
+  margin-top: 10px;
+  margin-right: -45px;
+  background-image: url("../img/Button.png");
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  padding-left: 27px;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  background-image: url("../img/phone.png");
+}
+
+.number:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+/*****endHEADER*****/
+
+/*********************************************************************/
+
+/*****Navigator*****/
+
+nav {
+  background-color: white;
+  height: 53px;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 0;
+}
+
+.navButton:active,
+.navButton:hover,
+.navButton {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3px;
+}
+
+nav > div > hr {
+  border: none;
+  background-color: black;
+  width: 1px;
+  height: 38px;
+}
+
+.navFocus {
+  position: absolute;
+  height: 75px;
+  width: 320px;
+  margin-top: -11px;
+  margin-left: 493px;
+  margin-bottom: 10px;
+  background-image: url("../img/focus.png");
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/*****endNavigator*****/
+
+/*********************************************************************/
+
+/*****FirstScreen******/
+
+.firstScreen {
+  background-image: url("../img/bgFirstScreen.png");
+  position: relative;
+  height: 955px;
+}
+
+.fstScrTitle {
+  align-items: flex-start;
+  margin-top: 109px;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "PlayfairDisplay";
+  color: rgb(251, 200, 153);
+  line-height: 1.182;
+  text-align: left;
+  margin: 0;
+}
+
+.minPrice {
+  font-size: 26px;
+  font-family: "Proxima Nova";
+  color: white;
+  line-height: 1;
+  text-align: center;
+  margin: 34px 0;
+}
+
+.minPrice > hr {
+  border: none;
+  background-color: rgb(251, 200, 153);
+  width: 50px;
+  height: 1px;
+  margin-right: 23px;
+}
+
+.descCard {
+  border-radius: 10px;
+  background-color: rgb(23, 21, 20);
+  width: 380px;
+  height: 215px;
+  padding-left: 33px;
+}
+
+.fstScrDesc {
+  margin-top: 115px;
+}
+
+h2,
+h3,
+.descCard > p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "ProximaNova";
+  color: rgb(251, 200, 153);
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 33px;
+}
+
+.descCard > p {
+  margin-top: 29px;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: rgb(204, 204, 204);
+  line-height: 1.3;
+  text-align: left;
+}
+
+/*****endFirstScreen******/
+
+/*********************************************************************/
+
+/*****SecondtScreen******/
+
+/*****endSecondtScreen******/
+
+.sthScrCont {
+  align-items: center;
+}
+
+.chsMatTitle {
+  align-items: flex-start;
+}
+
+.button > p {
+  font-size: 18px;
+  font-family: "PlayfairDisplay";
+  line-height: 2;
+  text-align: center;
+}
+
+.secondScreen {
+  background-image: url("../img/bgSecScr.jpg");
+  height: 1258px;
+}
+
+.secScrCont {
+  background-image: url("../img/secScrPanel.png");
+  height: 1003px;
+}
+
+.chooseMat,
+h4 {
+  font-size: 32px;
+  font-family: "PlayfairDisplay";
+  color: rgb(1, 1, 1);
+  line-height: 1;
+  text-align: left;
+}
+
+.chooseMat {
+  margin: 0;
+  position: relative;
+  top: -5px;
+}
+
+.chsMatButtons {
+  overflow: visible;
+}
+
+.chsMatTitle > hr {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 48px;
+  height: 2px;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.chsMatTitle > p {
+  margin: 0;
+  font-size: 26px;
+  font-family: "Proxima Nova";
+  color: black;
+  line-height: 1.231;
+  margin-bottom: 55px;
+}
+
+.chsMatButtons {
+  margin-left: -5px;
+}
+
+.MatButton {
+  margin: 0;
+  font-size: 26px;
+  font-family: "Proxima Nova";
+  color: black;
+  line-height: 1.231;
+}
+
+.MatButton {
+  padding: 13px 0px;
+  padding-left: 35px;
+  height: 62px;
+  width: 367px;
+  font-size: 24px;
+  font-family: "Proxima Nova";
+  overflow: visible;
+  line-height: 1;
+}
+
+.MatButton:hover {
+  cursor: pointer;
+  background-image: url("../img/matBtn.png");
+  background-size: 367px 65px;
+  overflow: visible;
+  color: white;
+}
+
+.matCard {
+  margin-top: 70px;
+  margin-right: 75px;
+}
+
+.matTitle {
+  font-size: 30px;
+  font-family: "PlayfairDisplay";
+  color: rgb(255, 255, 255);
+  line-height: 1.165;
+  text-align: left;
+  margin-top: 44px;
+}
+
+.matDesc {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(204, 204, 204);
+  line-height: 1.444;
+}
+
+.matDesc > ol {
+  padding-left: 18px;
+}
+
+.matTypes {
+  margin-top: 34px;
+}
+
+.matType:not(:last-of-type) {
+  margin-right: 13px;
+}
+
+.matCard,
+.chooseMat {
+  align-content: center;
+}
+
+.addBtn:hover,
+.matType:hover {
+  cursor: pointer;
+}
+
+.matType:active {
+  filter: drop-shadow(0px 0px 5px rgba(227, 160, 98, 1));
+}
+
+.matColor {
+  display: block;
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: "Proxima Nova";
+  color: white;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.matPrice {
+  display: block;
+  margin-bottom: 34px;
+  font-size: 18px;
+  font-family: "PlayfairDisplay";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.thirdScreen {
+  background-image: url("../img/bgThrdScr.jpg");
+  background-position: 0 799px;
+}
+
+.trdScrCont {
+  background-image: url("../img/thrdScrPanel.png");
+  margin-top: -253px;
+  height: 1859px;
+}
+
+.fstMat {
+  margin-right: -35px;
+}
+
+.thirdScreen > .trdScrCont > .cont > .matCard {
+  margin-top: 131px;
+  margin-left: 62px;
+}
+
+.thirdScreen > .trdScrCont > .cont > .matCard > .matPic {
+  margin-right: 50px;
+}
+
+.thirdScreen > .trdScrCont > .cont > .matCard > .matText,
+.matTypes,
+.addBtn {
+  margin-left: 59px;
+}
+
+.Reverse:hover {
+  background-image: url("../img/matBtnRev.png");
+}
+
+.Reverse {
+  padding-right: 35px;
+  margin-right: -5px;
+}
+
+.aiRight {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.orderCard {
+  background-image: url("../img/presentPic.png");
+  height: 812px;
+  width: 1136px;
+  margin-top: 118px;
+  margin-left: 69px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-top: 111px;
+  font-size: 39px;
+  margin-bottom: 0;
+}
+
+.orderText {
+  padding-left: 84px;
+  width: 558px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.orderDesc {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  line-height: 1.5;
+  -moz-transform: matrix(1, 0, 0, 1.0000706945895, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1.0000706945895, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1.0000706945895, 0, 0);
+}
+
+.orderText > div {
+  margin-top: 5px;
+}
+
+.orderText > div > hr {
+  border: none;
+  background-color: black;
+  width: 48px;
+  height: 2px;
+}
+
+.orderForm {
+  margin-right: 87px;
+  margin-top: 64px;
+  width: 459px;
+  justify-content: space-between;
+}
+
+.matApper {
+  width: 459px;
+  justify-content: space-between;
+}
+
+.matApper > div:first-of-type {
+  margin-bottom: 15px;
+}
+
+select:first-of-type {
+  margin-right: 15px;
+}
+
+select {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 4px;
+  width: 222px;
+  height: 47px;
+  padding-left: 30px;
+  appearance: none;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 4px;
+  background-color: rgb(250, 245, 241);
+  width: 222px;
+  height: 45px;
+  padding-left: 36px;
+}
+
+.carDesc > div > input {
+  margin-right: 15px;
+}
+
+.clientContacts > input {
+  width: 459px;
+  margin-top: 15px;
+}
+
+.contacts > input:first-of-type {
+  margin-right: 15px;
+}
+
+.clientContacts {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.matApperForTrunk {
+  width: 459px;
+}
+
+.carDesc {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.orderBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderBtn > a {
+  font-size: 18px;
+  font-family: "PlayfairDisplay";
+  color: rgb(255, 255, 255);
+}
+
+.selectTitle,
+.contTitle,
+.descTitle {
+  font-size: 18px;
+  margin-bottom: 11px;
+  margin-top: 18px;
+  font-family: "Arial";
+  color: rgb(109, 68, 43);
+  text-align: left;
+  -moz-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+}
+
+.price > p {
+  margin-top: 17px;
+  margin-bottom: 22px;
+  font-size: 25px;
+  font-family: "PlayfairDisplay";
+  line-height: 1.2;
+  text-align: center;
+  -moz-transform: matrix(0.99921754617172, 0, 0, 0.999991804021, 0, 0);
+  -webkit-transform: matrix(0.99921754617172, 0, 0, 0.999991804021, 0, 0);
+}
+
+.price > p > span {
+  font-size: 35px;
+  font-family: "PlayfairDisplay";
+  line-height: 0.857;
+  text-align: center;
+  -moz-transform: matrix(0.99921754617172, 0, 0, 0.999991804021, 0, 0);
+  -webkit-transform: matrix(0.99921754617172, 0, 0, 0.999991804021, 0, 0);
+  -ms-transform: matrix(0.99921754617172, 0, 0, 0.999991804021, 0, 0);
+}
+
+input,
+input::placeholder,
+select {
+  font-size: 14px;
+  font-family: "HelveticaNeueCyr";
+  color: rgb(147, 91, 56);
+  line-height: 2.143;
+  text-align: left;
+  -moz-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 0.99969001242342, 0, 0);
+}
+
+/*SELECTS*/
+#s1 {
+  background: url("../img/materialPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+
+#s2 {
+  background: url("../img/colorPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+
+#s3 {
+  background: url("../img/addPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+
+#s4 {
+  background: url("../img/addColorPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+
+#s5 {
+  background: url("../img/materialPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+
+#s6 {
+  background: url("../img/colorPic.gif") no-repeat 10px center,
+    url("../img/down-arrow.svg") no-repeat 200px center, rgb(250, 245, 241);
+}
+/*/SELECTS*/
+
+/*INPUTS*/
+#i1 {
+  background-image: url("../img/autoPic.gif");
+}
+
+#i2 {
+  background-image: url("../img/factoryPic.gif");
+  background-position: 10px 12px;
+}
+
+#i3 {
+  background-image: url("../img/namePic.gif");
+}
+
+#i4 {
+  background-image: url("../img/phonePic.gif");
+}
+
+#i5 {
+  background-image: url("../img/adressPic.gif");
+}
+/*/INPUTS*/
+
+input,
+select {
+  background-position: 10px 14px;
+}
+
+img[alt="ar"] {
+  background-image: url("../img/down-arrow.svg");
+}
+
+/*четвертый экран*/
+
+.fifthScreen {
+  background-image: url("../img/bgFfScr.jpg");
+  height: 1563px;
+}
+
+.subFfScr > p {
+  font-size: 38.301px;
+  font-family: "PlayfairDisplay";
+  color: rgb(109, 68, 43);
+  line-height: 1.2;
+  -moz-transform: matrix(0.91968026715498, 0, 0, 0.91382143051456, 0, 0);
+  -webkit-transform: matrix(0.91968026715498, 0, 0, 0.91382143051456, 0, 0);
+  -ms-transform: matrix(0.91968026715498, 0, 0, 0.91382143051456, 0, 0);
+}
+
+.subFfScr > hr {
+  background-color: rgb(227, 160, 98);
+  width: 48px;
+  height: 3px;
+  border: none;
+  margin-top: -20px;
+}
+
+.subFfScr {
+  margin: auto;
+  align-items: center;
+}
+
+.matMaterialDesc > li {
+  font-size: 32px;
+  font-family: "Proxima Nova";
+  color: rgb(85, 51, 30);
+  line-height: 1.2;
+  -moz-transform: matrix(0.99890024035193, 0, 0, 1.00199264834922, 0, 0);
+  -webkit-transform: matrix(0.99890024035193, 0, 0, 1.00199264834922, 0, 0);
+  -ms-transform: matrix(0.99890024035193, 0, 0, 1.00199264834922, 0, 0);
+  margin-top: 30px;
+}
+
+.subPoint {
+  margin-top: -2px;
+  margin-left: -30px;
+  font-size: 17px;
+  font-family: "Proxima Nova";
+  color: rgb(85, 51, 30);
+  line-height: 0.859;
+}
+
+.subPoint > hr {
+  margin-top: 5px;
+  margin-left: 0;
+  width: 332px;
+  height: 1px;
+  border: none;
+  background-color: rgb(85, 51, 30);
+}
+
+.markers > img:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+
+.markers {
+  width: 22px;
+  padding-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.columnFlexContt {
+  align-items: center;
+}
+
+.hrDashed {
+  border-left: 1px dashed;
+  height: 450px;
+  margin-top: 21px;
+  margin-right: -11px;
+}
+
+.light {
+  margin-top: -60px;
+}
+
+.threePic {
+  margin-top: 23px;
+  margin-bottom: 50px;
+}
+
+.ideal,
+.save {
+  padding-left: 200px;
+}
+
+.facts {
+  background-color: #1e1e1e;
+  align-items: center;
+  height: 1000px;
+}
+
+.container > p {
+  color: #d29f65;
+  font-size: 40px;
+}
+
+span {
+  color: #5d5954;
+  font-size: 130px;
+  display: block;
+}
+
+#circle {
+  height: 607px;
+  width: 607px;
+  z-index: 1;
+  position: absolute;
+}
+
+.fourthScreen {
+  height: 913px;
+  background-image: url("../img/videoBg.jpg");
+}
+
+.videoCont {
+  margin: auto;
+  height: 333px;
+  width: 594px;
+  background-color: #fff;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.answer > p:first-of-type,
+.frthScrCont > p {
+  font-size: 26px;
+  font-family: "Playfair Display";
+  color: rgb(251, 200, 153);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.frthScrCont > p {
+  font-size: 42px;
+}
+
+.answersCont {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.answer > hr {
+  background-color: rgb(227, 160, 98);
+  margin-top: -10px;
+  margin-bottom: 30px;
+  width: 36px;
+  height: 2px;
+  border: none;
+}
+
+.fourthScreen {
+  padding-top: 25px;
+}
+
+.fourthScreen > div:first-of-type {
+  background-image: url("../img/bgcircle.png");
+  background-position: center -100px;
+  background-size: 726px 726px;
+}
+
+.sixthScreen {
+  background-image: url("../img/whiteBg.png");
+  height: 1013px;
+}
+
+.sthScrCont > hr {
+  background-color: rgb(227, 160, 98);
+  width: 47px;
+  height: 2px;
+  border: none;
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+
+.sthScrCont > p {
+  font-size: 43.594px;
+  font-family: "Playfair Display";
+  color: rgb(109, 68, 43);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.firstCol,
+.secondCol,
+.thirdCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstCol > div > img,
+.secondCol > div > img,
+.thirdCol > div > img {
+  margin: 15px;
+}
+
+.firstCol > div > img:hover,
+.secondCol > div > img:hover,
+.thirdCol > div > img:hover {
+  animation-name: brightAnim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.firstCol > div > img:not(:hover),
+.secondCol > div > img:not(:hover),
+.thirdCol > div > img:not(:hover) {
+  animation-name: brightAnimRev;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes brightAnim {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.5);
+  }
+}
+@keyframes brightAnimRev {
+  0% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.firstCol > div,
+.secondCol > div,
+.thirdCol > div {
+  height: auto;
+  width: auto;
+  background-image: url("../img/search.svg");
+}
+
+.flexCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.factTitle {
+  font-size: 33px;
+  font-family: "Playfair Display";
+  color: rgb(227, 160, 98);
+  line-height: 1.055;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.harmony > div > hr,
+.ideal > div > hr,
+.save > div > hr,
+.status > div > hr {
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  width: 45px;
+  margin: 0;
+  margin-bottom: -15px;
+}
+
+.harmony,
+.ideal,
+.save,
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.harmony > div > span,
+.ideal > div > span,
+.save > div > span,
+.status > div > span {
+  font-size: 21.779px;
+  font-family: "ProximaNova";
+  color: #e3a062;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-top: 35px;
+}
+
+.harmony > div > p,
+.status > div > p {
+  text-align: right;
+}
+
+.ideal > div > p,
+.save > div > p {
+  text-align: left;
+}
+
+.harmony > div > p,
+.save > div > p,
+.ideal > div > p,
+.status > div > p {
+  font-size: 19.646px;
+  font-family: "Proxima Nova";
+  color: #fff;
+  line-height: 1.219;
+}
+
+.factCont {
+  background-image: url("../img/factBg.svg");
+  background-repeat: no-repeat;
+  height: 1050px;
+}
+
+.harmony > div,
+.ideal > div,
+.harmony > div,
+.status > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.harmony > div,
+.ideal > div,
+.save > div,
+.status > div {
+  height: 153px;
+  width: 577px;
+}
+
+.harmony::before {
+  content: "01";
+}
+
+.save::after {
+  content: "04";
+}
+
+.ideal::after {
+  content: "02";
+}
+
+.status::before {
+  content: "03";
+}
+
+.harmony::before,
+.save::after,
+.ideal::after,
+.status::before {
+  font-size: 100.78px;
+  color: rgba(247, 231, 215, 0.2);
+  font-weight: bold;
+}
+
+
+.harmony > div,
+.status> div {
+  align-items: flex-end;
+}
+
+.flexCol > .button {
+  margin-top: 55px;
+}
+
+/* FORM PRE-FOOTER SCREEN */
+
+.tenthScreen {
+  background: url(../img/tenthBG.png) center no-repeat;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  background-size: cover;
+}
+.container > .tenthTitle {
+  margin: 0;
+  font-family: "PlayfairDisplay";
+  font-size: 36px;
+  color: #fff;
+  text-align: left;
+}
+.tenthHR {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 85px;
+  height: 1px;
+  margin: 20px 0px;
+}
+.blockTextForm {
+  display: flex;
+  align-items: flex-start;
+}
+.tnthtext {
+  font-family: "ProximaNova";
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+.tenthForm {
+  display: flex;
+  background-color: #fff;
+  margin-left: 120px;
+  align-items: center;
+}
+.inputName {
+  background: url(../img/formName.png) top 15px left 9px no-repeat, #fff;
+  width: 176px;
+}
+.inputPhone {
+  background: url(../img/formPhone.png) top 16px left 9px no-repeat, #fff;
+  width: 191px;
+}
+.tenthForm > input {
+  border: none;
+  font-size: 14px;
+  padding: 10px 30px;
+  padding-top: 15px;
+}
+.tenthForm > input::placeholder {
+  color: #6e6e6e;
+}
+.formSplit {
+  border: none;
+  background-color: #6e6e6e;
+  width: 32px;
+  height: 1px;
+  transform: rotate(90deg);
+  margin: 0;
+}
+.formButton {
+  height: 43px;
+  width: 176px;
+  font-size: 16px;
+  line-height: 24;
+  margin-left: 31px;
+}
+
+/* end of FORM PRE-FOOTER SCREEN */
+
+/* **************************************************** */
+
+/* FOOTER */
+
+footer {
+  background-color: #000;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer > p {
+  font-family: "HelveticaNeueCyr";
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+/* end of FOOTER */
+
+/* MOBILE ADAPTATION */
+
+.headerMenuBurger {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+  .header, .headerCont {
+    height: 81px;
+  }
+  .headerCont {
+    margin: 0 20px;
+  }
+  .headerMenuBurger {
+    display: block;
+  }
+  .headerDesc > .shortDesc {
+    display: none;
+  }
+  .headerDesc > a > img {
+    width: 90px;
+  }
+  .headerCall-Button {
+    display: none;
+  }
+  .headerCall {
+    width: 120px;
+  }
+  .number {
+    font-size: 12px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .firstScreen {
+    background-image: url('../img/bgFirstScreenMobile.png');
+  }
+  .fstScrTitle {
+    margin-top: 30px;
+    display: block;
+    margin-left: 20px;
+  }
+  .fstScrTitle > h1 {
+    font-size: 24px;
+  }
+  .minPrice > hr {
+    width: 10px;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 15px;
+    height: 1px;
+  }
+  .minPrice {
+    margin: 0;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .button {
+    width: 220px;
+    height: 50px;
+  }
+  .button > p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .fstScrDesc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .descCard {
+    height: 173px;
+    width: 270px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .descCard > h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .descCard > p {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .secondScreen, .secScrCont {
+    height: 934px;
+    background: #fff;
+  }
+  .cont {
+    flex-direction: column;
+  }
+  .cont > div {
+    position: initial;
+  }
+  .chsMatTitle > h2 {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .chsMatTitle > hr {
+    width: 45px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .chsMatTitle > p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}

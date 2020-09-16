@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/firstScreen" />
+    <link rel="stylesheet" href="css/secondScreen.css" />
+    <link rel="stylesheet" href="css/thirdScreen.css" />
+    <link rel="stylesheet" href="css/fourthScreen.css" />
+
+    <link rel="stylesheet" href="css/font/font.css" />
+    <link rel="stylesheet" href="css/font/HelveticaNeueCyr.css" />
+    <title>ExzistPro</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+
+    <!-- STATIC -->
+    <header class="header">
+      <div class="headerCont container">
+        <div class="headerDesc">
+          <a href="#">
+            <img src="img/logo.png" alt="Логотип" />
+          </a>
+          <div class="shortDesc">
+            Оптовый производитель аксессуаров
+            <br />
+            для салона авто с 2005 года
+          </div>
+        </div>
+        <div class="headerCall">
+          <div>
+            <div class="number">+7(906)611-49-22</div>
+            <div class="number">8(800)550-25-99</div>
+          </div>
+          <div class="headerCall-Button">
+            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+          </div>
+        </div>
+        <div class="headerMenuBurger">
+          <img src="./img/menuBurger.png" alt="Меню">
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="navFocus">
+        <p>3D-коврики из экокожи</p>
+      </div>
+      <div class="navCont container">
+        <div class="navButton" onclick="pageSwitcher(this)" id="EvaMat">
+          EVA-коврики
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="3Dmat">
+          3D-коврики из экокожи
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Alcantar">
+          Накидки из алькантары
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Fur">
+          Накидки из меха
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Trunk">
+          Саквояжи для багажника
+        </div>
+      </div>
+    </nav>
+    <!-- /STATIC -->
+
+    <!-- DYNAMIC -->
+    <section class="firstScreen">
+      <div class="fstScrCont container">
+        <div class="fstScrTitle">
+          <h1>
+            Премиум 3D коврики<br />
+            для вашего авто<br />
+            от производителя
+          </h1>
+          <div class="minPrice">
+            <hr />
+            <p>от 9900 р. за комплект</p>
+          </div>
+          <a href="#" class="button">
+            <p>ПОДОБРАТЬ КОМПЛЕКТ</p>
+          </a>
+        </div>
+        <div class="fstScrDesc">
+          <div class="descCard">
+            <h3>
+              Свое производство<br />
+              на 600 кв. м
+            </h3>
+            <p>
+              Работаем с 2005 года. <br />
+              Производственный цех<br />
+              во Владимире под Москвой
+            </p>
+          </div>
+          <div class="descCard">
+            <h3>
+              Оплата<br />
+              при получении
+            </h3>
+            <p>
+              Мы — дилеры автомаркета СДЭКа. <br />
+              У них есть наши коврики почти<br />
+              в каждом крупном городе
+            </p>
+          </div>
+          <div class="descCard">
+            <h3>
+              12 месяцев гарантии<br />
+              без чека
+            </h3>
+            <p>
+              На обратной стороне<br />
+              вышиваем номер партии<br />
+              и фамилию мастера
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secondScreen">
+      <div class="secScrCont">
+        <div class="cont container">
+          <div class="chooseMat">
+            <div class="chsMatTitle">
+              <h2>Коврики в салон</h2>
+              <hr />
+              <p>
+                Выберите ниже желаемый<br />
+                тип материала:
+              </p>
+            </div>
+            <div class="chsMatButtons">
+              <div class="MatButton">3D-коврики &laquo;ПРЕМИУМ&raquo;</div>
+              <div class="MatButton">3D-коврики &laquo;ЛЮКС&raquo;</div>
+              <div class="MatButton">3D-коврики &laquo;ПРЕСТИЖ&raquo;</div>
+              <div class="MatButton">3D-коврики &laquo;GT&raquo;</div>
+            </div>
+          </div>
+          <div class="matCard">
+            <div class="matPic">
+              <img src="img/premPic1.png" alt="" class="fstMat" />
+              <img src="img/premPic2.png" alt="" class="secMat" />
+            </div>
+            <div class="matText">
+              <div class="matTitle">3D-коврики &laquo;ПРЕМИУМ&raquo;</div>
+              <div class="matDesc">
+                <ol>
+                  <li>Изготавливаются вручную по индивидуальным лекалам</li>
+                  <li>Используется инновационный материал</li>
+                  <li>Не впитывают влагу, грязь и легко моются</li>
+                  <li>
+                    Имеют двухслойную плотную экокожу с волокнистым<br />
+                    основанием и дышащим полиуретановым покрытием
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="matTypes">
+              <div>
+                <img src="img/yellow.png" alt="" class="matType" />
+                <img src="img/light.png" alt="" class="matType" />
+                <img src="img/dark.png" alt="" class="matType" />
+                <img src="img/blackBlackdot.png" alt="" class="matType" />
+                <img src="img/blackYellowDot.png" alt="" class="matType" />
+                <img src="img/blackRedDot.png" alt="" class="matType" />
+              </div>
+              <br />
+              <p class="matColor">Выбран цвет:</p>
+              <br />
+              <p class="matPrice">Стоимость:</p>
+            </div>
+            <div class="addBtn button">ЗАКАЗАТЬ КОМПЛЕКТ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="thirdScreen">
+      <div class="trdScrCont">
+        <div class="cont container">
+          <div class="matCard">
+            <div class="matPic">
+              <img src="img/premPic3.png" alt="" class="fstMat" />
+              <img src="img/premPic4.png" alt="" class="secMat" />
+            </div>
+            <div class="matText">
+              <div class="matTitle">3D-коврики &laquo;ПРЕМИУМ&raquo;</div>
+              <div class="matDesc">
+                <ol>
+                  <li>Изготавливаются вручную по индивидуальным лекалам</li>
+                  <li>Используется инновационный материал</li>
+                  <li>Не впитывают влагу, грязь и легко моются</li>
+                  <li>
+                    Имеют двухслойную плотную экокожу с волокнистым<br />
+                    основанием и дышащим полиуретановым покрытием
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="matTypes">
+              <div>
+                <img src="img/yellow.png" alt="" class="matType" />
+                <img src="img/light.png" alt="" class="matType" />
+                <img src="img/dark.png" alt="" class="matType" />
+                <img src="img/blackBlackdot.png" alt="" class="matType" />
+                <img src="img/blackYellowDot.png" alt="" class="matType" />
+                <img src="img/blackRedDot.png" alt="" class="matType" />
+              </div>
+              <br />
+              <p class="matColor">Выбран цвет:</p>
+              <br />
+              <p class="matPrice">Стоимость:</p>
+            </div>
+            <div class="addBtn button">ДОБАВИТЬ К ЗАКАЗУ</div>
+          </div>
+          <div class="chooseMat aiRight">
+            <div class="chsMatTitle aiRight">
+              <h2 class="aiRight">Коврики в багажник</h2>
+              <hr />
+              <p class="aiRight">
+                Выберите ниже желаемый<br />
+                тип материала:
+              </p>
+            </div>
+            <div class="chsMatButtons">
+              <div class="MatButton Reverse">
+                3D-коврики &laquo;ПРЕМИУМ&raquo;
+              </div>
+              <div class="MatButton Reverse">3D-коврики &laquo;ЛЮКС&raquo;</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="subThrdScr">
+            <div class="orderCard">
+              <div class="orderText">
+                <h4>Оформление заказа</h4>
+                <div>
+                  <hr />
+                </div>
+                <div class="orderDesc">
+                  Для заказа стильных 3D-ковриков из эко-кожи заполните простую
+                  форму справа.
+                  <br /><br />
+                  Оплата производится при получении заказа. Доставка для
+                  розничных клиентов осуществляется при помощи курьерской службы
+                  СДЭК по всей России и оплачивается отдельно.
+                </div>
+              </div>
+              <div class="orderForm">
+                <p class="selectTitle">Коврики в салон:</p>
+                <div class="matApper">
+                  <div>
+                    <select name="type" id="s1">
+                      <option value="" hidden disabled selected>
+                        Тип материала
+                      </option>
+                    </select>
+                    <select name="color" id="s2">
+                      <option value="" hidden disabled selected>
+                        Цвет ковриков
+                      </option>
+                    </select>
+                  </div>
+                  <div>
+                    <select name="add" id="s3">
+                      <option value="" hidden disabled selected>
+                        Дополнительный ворс
+                      </option>
+                    </select>
+                    <select name="addColor" id="s4">
+                      <option value="" hidden disabled selected>
+                        Цвет ворсовых вставок
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <p class="selectTitle">Коврики в багажник:</p>
+                <div class="matApperForTrunk">
+                  <select name="type" id="s5">
+                    <option value="" hidden disabled selected>
+                      Тип материала
+                    </option>
+                  </select>
+                  <select name="color" id="s6">
+                    <option value="" hidden disabled selected>
+                      Цвет ковриков
+                    </option>
+                  </select>
+                </div>
+                <div class="carDesc">
+                  <p class="descTitle">Данные автомобиля</p>
+                  <div>
+                    <input
+                      type="text"
+                      id="i1"
+                      placeholder="Марка и модель авто"
+                    />
+                    <input type="text" id="i2" placeholder="Год выпуска" />
+                  </div>
+                </div>
+                <p class="contTitle">Контактные данные</p>
+                <div class="clientContacts">
+                  <div class="contacts">
+                    <input type="text" id="i3" placeholder="Ваше имя" />
+                    <input type="text" id="i4" placeholder="Телефон" />
+                  </div>
+                  <input
+                    type="text"
+                    id="i5"
+                    placeholder="Адрес пункта самовывоза"
+                  />
+                </div>
+                <div class="price">
+                  <p>Итого стоимость: <span>16000 руб</span></p>
+                </div>
+                <div class="orderBtn">
+                  <button class="button">ЗАКАЗАТЬ КОМПЛЕКТ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fourthScreen">
+      <div class="container">
+        <div class="frthScrCont">
+          <p>Почему выбирают 3D-коврики ExzistPro?</p>
+          <div>
+            <div class="videoCont"></div>
+          </div>
+          <div class="answersCont">
+            <div class="answer">
+              <p>Качество</p>
+              <hr />
+              <p>
+                Мы используем эко-кожу <br />
+                исключительно лучшего<br />
+                качества
+              </p>
+            </div>
+            <div class="answer">
+              <p>Долговечность</p>
+              <hr />
+              <p>
+                Применяем износостойкий <br />
+                высокотехнологичный<br />
+                материал
+              </p>
+            </div>
+            <div class="answer">
+              <p>Защита</p>
+              <hr />
+              <p>
+                Наши 3D-коврики защищают <br />
+                ваш салон от влаги и <br />
+                грязи
+              </p>
+            </div>
+            <div class="answer">
+              <p>Покрытие</p>
+              <hr />
+              <p>
+                3D-коврики закрывают <br />
+                более 90% оригинального <br />
+                ворса автомобиля
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fifthScreen">
+      <div class="ffScrCont">
+        <div class="container columnFlexCont">
+          <div class="subFfScr">
+            <p>3D-коврики из экокожи ExzistPro</p>
+            <div class="materialList">
+              <img src="img/ordMat.png" alt="..." />
+              <div class="hrDashed"></div>
+              <div class="markers">
+                <img src="img/marker.svg" alt="" />
+                <img src="img/marker.svg" alt="" />
+                <img src="img/marker.svg" alt="" />
+                <img src="img/marker.svg" alt="" />
+                <img src="img/marker.svg" alt="" />
+              </div>
+              <ol class="matMaterialDesc">
+                <li>
+                  Эко-кожа со строчкой
+                  <div class="subPoint">
+                    Качественная автомобильная <b>эко-кожа</b>
+                    <hr />
+                  </div>
+                </li>
+                <li>
+                  Основа 3D-фактуры
+                  <div class="subPoint">
+                    <b>Мягкая</b> основа для формы прошита эко-кожей
+                    <hr />
+                  </div>
+                </li>
+                <li>
+                  Гидроизоляция
+                  <div class="subPoint">
+                    Помогает более <b>прочно</b> соединять слои
+                    <hr />
+                  </div>
+                </li>
+                <li>
+                  Вспененный полиуретан
+                  <div class="subPoint">
+                    Помогает сохранить форму материала и
+                    <b>предотвращает шум</b>
+                    <hr />
+                  </div>
+                </li>
+                <li>
+                  Антискользящая поверхность
+                  <div class="subPoint">
+                    <b>Для надежной</b> фиксации коврика в атомобиле
+                    <hr />
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="subFfScr light">
+            <p style="margin-top: 100px">Особенности 3D-коврикво ExzistPro</p>
+            <hr />
+            <img class="threePic" src="img/threePic.png" alt="..." />
+            <button class="button">ЗАКАЗАТЬ КОМПЛЕКТ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="factCont">
+      <div class="container flexCol">
+        <span class="factTitle">Несколько фактов о продукции ExzistPro</span>
+
+        <div class="harmony">
+          <img src="img/1pic.png" alt="..." />
+          <div>
+            <span>Гармонично вписывается в интерьер</span>
+            <hr />
+            <p>за счет широкого выбора цветовой<br> гаммы на любой вкус</p>
+          </div>
+        </div>
+
+        <div class="ideal">
+          <div>
+            <span>Идеально ложится в салон,</span>
+            <hr />
+            <p>
+              потому что наши 3D-коврики сшиты по<br> собственным уникальным лекалам
+            </p>
+          </div>
+          <img src="img/2pic.png" alt="..." />
+        </div>
+
+        <div class="status">
+          <img src="img/3pic.png" alt="..." />
+          <div>
+            <span>Подчеркивает статус автомобиля</span>
+            <hr />
+            <p>
+              благодаря модной и солидной строчке<br> эко-кожи в виде вытянутого
+              ромба
+            </p>
+          </div>
+        </div>
+
+        <div class="save">
+          <div>
+            <span>Сохраняет салон в чистоте</span>
+            <hr />
+            <p>
+              благодаря крою с бортами, которые закрывают<br> более 90% площади пола
+            </p>
+          </div>
+          <img src="img/4pic.png" alt="..." />
+        </div>
+
+        <div class="button">ЗАКАЗАТ КОМПЛЕКТ</div>
+      </div>
+    </section>
+
+    <div class="sixthScreen">
+      <div class="container">
+        <div class="sthScrCont">
+          <p>Фотогалерея</p>
+          <hr />
+          <div class="photos">
+            <div class="firstCol">
+              <div>
+                <img src="img/photo1.jpg" alt="..." />
+              </div>
+              <div>
+                <img src="img/photo4.jpg" alt="..." />
+              </div>
+            </div>
+            <div class="secondCol">
+              <div>
+                <img src="img/photo2.jpg" alt="..." />
+              </div>
+              <div>
+                <img src="img/photo5.jpg" alt="..." />
+              </div>
+            </div>
+            <div class="thirdCol">
+              <div>
+                <img src="img/photo3.jpg" alt="..." />
+              </div>
+              <div>
+                <img src="img/photo6.jpg" alt="..." />
+              </div>
+            </div>
+          </div>
+          <button class="button">ЗАКАЗАТЬ КОМПЛЕКТ</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="tenthScreen">
+      <div class="tnthScrCnt container">
+        <p class="tenthTitle">
+          Получите оптовое<br>
+          коммерческое предложение
+        </p>
+        <hr class="tenthHR">
+        <div class="blockTextForm">
+          <p class="tnthtext">
+            Оставьте свои данные в форме справа, чтобы<br>
+            наши менеджеры могли с Вами связаться и<br>
+            помочь вам стать нашим дилером.
+          </p>
+          <form action="#" class="tenthForm">
+            <input type="text" class="inputName" placeholder="Ваше имя*">
+            <hr class="formSplit">
+            <input type="text" class="inputPhone" placeholder="Номер телефона*">
+          </form>
+          <a href="#" class="button formButton">ОТПРАВИТЬ</a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container">
+        <p>
+          Производство и продажа аксессуаров для автомобилей. ООО «Рус-Спорт». ИНН: 3328014835, КПП: 332801001, ОГРН: 1163328063557
+        </p>
+        <p>Все права защищены. 2005 (с)</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
