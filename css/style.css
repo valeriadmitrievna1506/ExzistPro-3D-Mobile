@@ -1276,12 +1276,12 @@ footer {
   display: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   * {
     background-size: cover;
   }
   .container {
-    max-width: 400px;
+    max-width: 450px;
   }
   .header, .headerCont {
     height: 81px;
@@ -1376,10 +1376,10 @@ footer {
   }
   .chooseMat {
     padding-bottom: 50px;
-    width: 400px;
+    width: 450px;
   }
   .chooseMat > .chsMatTitle {
-    width: 400px;
+    width: 450px;
   }
   .chsMatButtons {
     margin: 0;
@@ -1463,7 +1463,7 @@ footer {
   }
   .thirdScreen > .trdScrCont > .cont > .matCard, .matCard > .aiRight {
     margin: 0;
-    width: 400px;
+    width: 450px;
   }
 
 
