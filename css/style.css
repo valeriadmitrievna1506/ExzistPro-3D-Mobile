@@ -1280,15 +1280,15 @@ footer {
   * {
     background-size: cover;
   }
+  .container {
+    max-width: 400px;
+  }
   .number {
     background-size: contain;
     padding-left: 15px;
   }
   input, select {
     background-size: auto;
-  }
-  .container {
-    max-width: 400px;
   }
   .header, .headerCont {
     height: 81px;
@@ -1679,6 +1679,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
   .threePic {
     display: none;
@@ -1695,9 +1696,16 @@ footer {
   .light > .button {
     margin: 60px auto;
   }
-  .threePicBlock > img {
+  .threePicBlock > div {
     width: 100%;
     box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  }
+  .threePicBlock > div > p {
+    font-family: "ProximaNova";
+    margin: 40px 150px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   /*********************************************************************/
