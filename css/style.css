@@ -1272,7 +1272,7 @@ footer {
 
 /* MOBILE ADAPTATION */
 
-.headerMenuBurger, .fourButton, .subFfScr > hr, .threePicBlock, .photosSlider {
+.headerMenuBurger, .fourButton, .subFfScr > hr, .threePicBlock, .photosSlider, .orderText > img {
   display: none;
 }
 
@@ -1283,6 +1283,9 @@ footer {
   .number {
     background-size: contain;
     padding-left: 15px;
+  }
+  input, select {
+    background-size: auto;
   }
   .container {
     max-width: 400px;
@@ -1517,8 +1520,61 @@ footer {
 
   .orderCard {
     margin: 0;
+    background-image: none;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 100px;
   }
-
+  .orderText {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .orderText > h4 {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+  .orderText > .orderDesc {
+    font-size: 18px;
+  }
+  .orderForm {
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 45px;
+  }
+  .orderText > img {
+    display: block;
+  }
+  .orderForm > div, .orderForm > div > div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+  .orderForm > div > div > select,
+  .orderForm > div > input,
+  .orderForm > div > select,
+  .orderForm > div > div > input {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 3px;
+    width: 230px;
+  }
+  .price > p {
+    font-size: 16px;
+    width: 220px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .price > p > span {
+    font-size: 24px;
+  }
+  input#i5 {
+    height: 105px;
+    padding-bottom: 60px;
+  }
   /*********************************************************************/
 
   .fourthScreen {
@@ -1783,6 +1839,7 @@ footer {
   }
   .tenthForm > input {
     padding-left: 48px;
+    width: 200px;
   }
   .formSplit {
     display: none;
